@@ -1,3 +1,3 @@
-import type {FourtuneEvents} from "#~src/v0/event/index.d.mts"
+import type {FourtuneEvents} from "#~src/v0/events/index.d.mts"
 
 export type {FourtuneEvents}
