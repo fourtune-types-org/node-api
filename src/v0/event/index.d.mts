@@ -10,4 +10,4 @@ type ErrorEvent = DefineEvent<"error", {
 	message: string
 }>
 
-export type Events = [WarningEvent, ErrorEvent]
+export type FourtuneEvents = [WarningEvent, ErrorEvent]

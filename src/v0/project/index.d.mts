@@ -1,7 +1,7 @@
 import type {EventEmitter} from "@aniojs/event-emitter"
 import type {FourtuneConfig} from "../config/index.d.mts"
 import type {FourtuneSession} from "../session/index.d.mts"
-import type {Events} from "../event/index.d.mts"
+import type {FourtuneEvents} from "../event/index.d.mts"
 
 type Message = {
 	severity: "warn" | "error"
@@ -21,7 +21,7 @@ type Compile = () => Promise<{
 	products: Product[]
 }>
 
-export type FourtuneProject = EventEmitter<Events> & {
+export type FourtuneProject = EventEmitter<FourtuneEvents> & {
 	readonly root: string
 	readonly config: FourtuneConfig
 
