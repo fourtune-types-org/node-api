@@ -1,0 +1,30 @@
+{
+  "name": "@fourtune-types/fourtune",
+  "version": "0.0.0",
+  "author": "Anio Software <info@anio.software>",
+  "description": "",
+  "license": "MIT",
+  "exports": {
+    "./v0": {
+      "types": "./dist/v0/index.d.mts"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fourtune-types-org/fourtune.git"
+  },
+  "type": "package",
+  "devDependencies": {
+    "@aniojs/event-emitter": "^0.0.5",
+    "@fourtune-types/core": "^1.0.1",
+    "@fourtune/core": "^0.1101.0",
+    "@fourtune/realm-js": "^0.31010.0",
+    "fourtune": "^0.30000.1"
+  },
+  "scripts": {
+    "prepare": "./node_modules/.bin/fourtune ."
+  },
+  "files": [
+    "./dist/"
+  ]
+}
