@@ -16,7 +16,7 @@ type ConfigBase = {
 		options?: unknown
 	}
 
-	autogenerate?: Record<string, AutogenerateGenerator<"user">>
+	autogenerate?: Record<string, AutogenerateGenerator>
 }
 
 type Config<R extends RealmName, OptionsType> = {

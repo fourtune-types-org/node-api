@@ -1,20 +1,20 @@
 import type {FourtuneSession} from "../index.d.mts"
 
-export type AutogenerateGenerator<Category extends string> = (
+export type AutogenerateGenerator = (
 	session: FourtuneSession,
-	category: Category,
+	category: string,
 	filePath: string
 ) => Promise<string>
 
 export type Autogenerate = {
 	addFourtuneFile: (
 		filePath: string,
-		generator: AutogenerateGenerator<"fourtune">
+		generator: AutogenerateGenerator
 	) => undefined
 
 	addSyntheticFile: (
 		category: string,
 		filePath: string,
-		generator: AutogenerateGenerator<string>
+		generator: AutogenerateGenerator
 	) => undefined
 }
