@@ -5,6 +5,9 @@
   "description": "Types for the fourtune API.",
   "license": "MIT",
   "exports": {
+    "./_versionless": {
+      "types": "./dist/_versionless/index.d.mts"
+    },
     "./v0": {
       "types": "./dist/v0/index.d.mts"
     }

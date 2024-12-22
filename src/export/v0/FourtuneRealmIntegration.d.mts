@@ -1,5 +1,6 @@
 import type {FourtuneSession} from "./FourtuneSession.d.mts"
 import type {FourtuneInputFile} from "./FourtuneInputFile.d.mts"
+import type {FourtuneRealmIntegrationBase} from "../_versionless/FourtuneRealmIntegrationBase.d.mts"
 
 type InitializeProjectFiles = (
 	session: FourtuneSession
@@ -13,10 +14,7 @@ type PreInitialize = (
 
 type Initialize = PreInitialize
 
-export type FourtuneRealmIntegration = {
-	// NB: 'getIntegrationAPIVersion' is versionless!
-	getIntegrationAPIVersion: () => number
-
+export type FourtuneRealmIntegration = FourtuneRealmIntegrationBase & {
 	initializeProjectFiles?: InitializeProjectFiles|undefined
 	preInitialize?: PreInitialize|undefined
 
