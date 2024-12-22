@@ -1,23 +1,23 @@
 import type {FourtuneSession} from "./FourtuneSession.d.mts"
 import type {FourtuneInputFile} from "./FourtuneInputFile.d.mts"
 
+type InitializeProjectFiles = (session: FourtuneSession) => {
+	[name: string]: number
+}
+
+type PreInitialize = (
+	session: FourtuneSession,
+	sourceFiles: FourtuneInputFile[],
+	assetFiles: FourtuneInputFile[]
+) => Promise<undefined>
+
+type Initialize = PreInitialize
+
 export type FourtuneRealmIntegrationAPI = {
 	// NB: 'getIntegrationAPIVersion' is versionless!
 	getIntegrationAPIVersion: () => number
 
-	initializeProjectFiles: (session: FourtuneSession) => {
-		[name: string]: number
-	}
-
-	preInitialize: (
-		session: FourtuneSession,
-		sourceFiles: FourtuneInputFile[],
-		assetFiles: FourtuneInputFile[]
-	) => Promise<undefined>
-
-	initialize: (
-		session: FourtuneSession,
-		sourceFiles: FourtuneInputFile[],
-		assetFiles: FourtuneInputFile[]
-	) => Promise<undefined>
+	initializeProjectFiles: InitializeProjectFiles
+	preInitialize: PreInitialize
+	initialize: Initialize
 }
