@@ -17,7 +17,8 @@ export type FourtuneRealmIntegrationAPI = {
 	// NB: 'getIntegrationAPIVersion' is versionless!
 	getIntegrationAPIVersion: () => number
 
-	initializeProjectFiles: InitializeProjectFiles
-	preInitialize: PreInitialize
+	initializeProjectFiles?: InitializeProjectFiles|undefined
+	preInitialize?: PreInitialize|undefined
+
 	initialize: Initialize
 }
