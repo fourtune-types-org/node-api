@@ -13,7 +13,7 @@ type PreInitialize = (
 
 type Initialize = PreInitialize
 
-export type FourtuneRealmIntegrationAPI = {
+export type FourtuneRealmIntegration = {
 	// NB: 'getIntegrationAPIVersion' is versionless!
 	getIntegrationAPIVersion: () => number
 
