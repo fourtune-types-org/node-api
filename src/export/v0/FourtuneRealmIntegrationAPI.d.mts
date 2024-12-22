@@ -1,9 +1,9 @@
 import type {FourtuneSession} from "./FourtuneSession.d.mts"
 import type {FourtuneInputFile} from "./FourtuneInputFile.d.mts"
 
-type InitializeProjectFiles = (session: FourtuneSession) => {
-	[name: string]: number
-}
+type InitializeProjectFiles = (
+	session: FourtuneSession
+) => Record<string, string>
 
 type PreInitialize = (
 	session: FourtuneSession,
