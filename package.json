@@ -1,5 +1,5 @@
 {
-  "name": "@fourtune-types/fourtune",
+  "name": "@fourtune-types/node-api",
   "version": "0.0.14",
   "author": "Anio Software <info@anio.software>",
   "description": "Types for the fourtune API.",
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fourtune-types-org/fourtune.git"
+    "url": "git+https://github.com/fourtune-types-org/node-api.git"
   },
   "type": "package",
   "devDependencies": {
