@@ -1,5 +1,5 @@
 import type {EventEmitter} from "@aniojs/event-emitter"
-import type {FourtuneConfig} from "../config/index.d.mts"
+//import type {FourtuneConfig} from "../config/index.d.mts"
 import type {FourtuneSession} from "../session/index.d.mts"
 import type {FourtuneEvents} from "../events/index.d.mts"
 
@@ -23,7 +23,7 @@ type Compile = () => Promise<{
 
 export type FourtuneProject = EventEmitter<FourtuneEvents> & {
 	readonly root: string
-	readonly config: FourtuneConfig
+	readonly config: unknown
 
 	readonly init: () => Promise<{
 		session: Readonly<FourtuneSession>,
