@@ -1,6 +1,6 @@
 {
   "name": "@fourtune-types/node-api",
-  "version": "0.0.14",
+  "version": "0.0.0",
   "author": "Anio Software <info@anio.software>",
   "description": "Types for the fourtune API.",
   "license": "MIT",
